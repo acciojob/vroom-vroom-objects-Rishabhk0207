@@ -4,7 +4,7 @@ function Car(make, model) {
 	this.model = model;
 }
 Car.prototype.getMakeModel = ()=>{
-	console.log(this.make + " " + this.model);
+	return this.make + " " + this.model;
 }
 
 
@@ -17,7 +17,7 @@ SportsCar.prototype= Object.create(Car.prototype);
 SportsCar.prototype.constructor = SportsCar;
 
 SportsCar.prototype.getTopSpeed = function() {
-    console.log(this.topSpeed);
+    return this.topSpeed;
 };
 
 // Do not change the code below
